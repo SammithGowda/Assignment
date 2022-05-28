@@ -110,7 +110,7 @@ export const Home = () => {
             className="empty_div_fifth_circle"
           ></div>
         </div>
-        <h5>circle</h5>
+        <h5 className="text">circle</h5>
         <div className="circle_div">
           <div className="first_circle"></div>
           <div className="second_circle"></div>
