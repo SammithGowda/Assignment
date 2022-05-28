@@ -3,6 +3,7 @@ import "./Home.css";
 export const Home = () => {
   const [num, setNum] = useState();
 
+  // function that hide selected circle and display that in empty div
   const firstcircle_hiding = () => {
     document.getElementsByClassName("first_circle")[0].style.display = "none";
     document.getElementsByClassName("empty_div_first_circle")[0].style.display =
@@ -32,6 +33,8 @@ export const Home = () => {
       "block";
   };
 
+  // function that remove circle from div and make div empty again
+
   const remove_first_circle = () => {
     document.getElementsByClassName("first_circle")[0].style.display = "block";
     document.getElementsByClassName("empty_div_first_circle")[0].style.display =
@@ -59,6 +62,7 @@ export const Home = () => {
     document.getElementsByClassName("empty_div_fifth_circle")[0].style.display =
       "none";
   };
+
   const passing = (num) => {
     if (num == 1) {
       firstcircle_hiding();
