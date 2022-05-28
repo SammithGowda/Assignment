@@ -77,7 +77,7 @@ export const Home = () => {
   return (
     <>
       <div className="main_div">
-        <h5>empty</h5>
+        <h5 className="first_text">Empty Div</h5>
         <div className="empty_div">
           <div
             onClick={() => {
@@ -118,7 +118,8 @@ export const Home = () => {
           <div className="fourth_circle"></div>
           <div className="fifth_circle"></div>
         </div>
-        <div>
+        <div className="inputdiv">
+          <p>Enter number with in range 1 to 5</p>
           <input
             onChange={(e) => {
               setNum(e.target.value);
@@ -126,6 +127,7 @@ export const Home = () => {
             type="text"
             placeholder="Enter Number"
           />
+          <br />
           <button
             onClick={() => {
               passing(num);
